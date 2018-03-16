@@ -1,0 +1,14 @@
+// TEMPLATES
+
+#templates ul.template-links {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	li {
+		height: 28px;
+		padding-left: 40px;
+		padding-top: 2px;
+		margin-bottom: 10px;
+		background: url(dist/images/download.png) no-repeat left center;
+	}
+}

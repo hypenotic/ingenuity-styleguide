@@ -1,0 +1,31 @@
+aside {
+	@include media($bp-large) {
+		@include span-columns(3);
+		position: fixed;
+		max-width: 200px;
+		margin-top: 30px;
+    }
+	@include media($bp-small) {
+		display: none;
+    }
+}
+
+.sidebar__nav {
+
+}
+
+.sidebar__nav ul {
+	list-style-type: none;
+	padding-left: 0;
+	padding-bottom: 0;
+}
+
+.get-in-touch {
+	border-top: 1px solid lightgrey;
+	padding-top: 20px;
+	margin-top: 20px;
+	a {
+		transition: all 0.5s;
+	}
+}
+
