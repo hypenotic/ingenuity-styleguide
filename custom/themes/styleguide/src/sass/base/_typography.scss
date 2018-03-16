@@ -1,0 +1,339 @@
+// Modular scale is in relation to 1.1rem = 22px
+body {
+	color: $base-font-color;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+}
+
+h1 {
+	font-family: $title-font;
+	font-style: normal;
+	font-weight: 400;
+	font-size: modular-scale(0, 3.33rem); //60px
+	line-height: modular-scale(0, 3.44rem); //62px
+}
+
+h1.title {
+	float: left;
+	@include media($bp-small) {
+		font-size: modular-scale(3); 
+		line-height: modular-scale(3); 
+    }
+}
+
+h2 {
+	font-family: $big-headings;
+	text-transform: uppercase;
+	font-weight: 800;
+	font-size: modular-scale(3, 0.9rem); //32px
+	line-height: modular-scale(3, 0.9rem);
+	margin-bottom: 20px;
+	margin-top: 20px;
+	@include media($bp-large) {
+	    font-size: modular-scale(5, 1.2rem); //32px
+	    line-height: modular-scale(5, 1.2rem);
+	    margin-bottom: 20px;
+	    margin-top: 20px;
+	}
+	@include media($bp-xlarge) {
+	    font-size: modular-scale(6, 1.15rem); //32px
+	    line-height: modular-scale(6, 1rem);
+	    margin-bottom: 20px;
+	    margin-top: 20px;
+	}
+}
+
+h3 {
+	font-family: $main-headings;
+	font-style: normal;
+	font-weight: 600;
+	font-size: modular-scale(1, 1.1rem); //20px
+	line-height: modular-scale(2, 1.25rem);
+	text-transform: uppercase;
+	@include media($bp-large) {
+	    font-size: modular-scale(2, 1.25rem); //20px
+	    line-height: modular-scale(3, 1.25rem);
+	    margin-bottom: 15px;
+	    padding-top: 20px;
+	}
+}
+
+h4 {
+	font-family: $main-headings;
+	font-style: normal;
+	font-weight: 300;
+	font-size: modular-scale(0, 1.25rem); //20px
+	line-height: modular-scale(1, 1.25rem);
+	text-transform: uppercase;
+	margin-top: 20px;
+	@include media($bp-large) {
+	    font-size: modular-scale(1, 1.25rem); //20px
+	    line-height: modular-scale(2, 1.25rem);
+	}
+}
+
+h5 {
+
+}
+
+h6 {
+
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+ul {
+	font-family: $p-font;
+	padding-bottom: 15px;
+	font-size: modular-scale(0); 
+	line-height: modular-scale(1); 
+	li {
+		font-weight: 300;
+	}
+}
+
+blockquote {
+	font-style: italic;
+	font-size: modular-scale(3); 
+	line-height: modular-scale(3); 
+}
+
+//h3.overview__tagline,
+.overview__content h3 {
+	font-family: $main-body-font;
+	font-style: italic;
+	font-weight: 300;
+	font-size: modular-scale(0, 1.25rem); //20px
+	line-height: modular-scale(1, 1.25rem);
+	margin-bottom: 15px;
+}
+
+h3.tone__principals, 
+h3.photography__principals,
+h3.typography__fonts,
+#templates ul li {
+	font-weight: 300;
+}
+
+h3.tone__principals, 
+h3.photography__principals,
+h3.typography__fonts {
+}
+
+#templates ul li {
+	line-height: modular-scale(2, 1.25rem);
+}
+
+// MAIN ============================
+
+.font-sample {
+ 	margin: 0;
+}
+
+main {
+	p { 
+		font-family: $main-body-font;
+		font-weight: 300;
+		font-size: modular-scale(0, 1rem);
+		line-height: modular-scale(1, 1.2rem);
+		margin-top: 0;
+		margin-bottom: 30px;
+		@include media($bp-large) {
+		    font-size: modular-scale(0);
+		    line-height: modular-scale(1, 1.4rem);
+		}
+	}
+	p.no-space {
+		margin: 0;
+	}
+}
+
+.main-articles {
+	blockquote,
+	blockquote p {
+		font-size: modular-scale(2, 1rem); 
+		line-height: modular-scale(3); 
+		@include media($bp-med) {
+		    font-size: modular-scale(1); //20px
+		    line-height: modular-scale(2);
+		}
+	}
+}
+
+article {
+	a {
+		border-bottom: 1px solid rgba(0,0,0,0.3);
+		transition: all 0.5s;
+		text-decoration: none;
+	}
+}
+
+// SIDEBAR ============================
+
+#mainmenu li a {
+	font-size: modular-scale(0, 0.9rem); //20px
+	line-height: modular-scale(0);
+}
+
+// The color of the bar is dynamic and can be changed within the theme
+// 	under the 'Styleguide' section - 'Header Color'
+.selected {
+	font-weight: 600;
+}
+
+aside {
+	text-transform: uppercase;
+}
+
+aside h3,
+aside p {
+	font-size: modular-scale(0, 0.9rem); //20px
+	line-height: modular-scale(0);
+	text-transform: uppercase;
+	margin-bottom: 0;
+	margin-top: 0;
+	padding-top: 0;
+}
+
+.get-in-touch {
+	p {
+		margin: 0;
+		font-weight: 400;
+	}
+}
+
+.sidebar__button {
+	color:$white;
+	a {
+
+	}
+	p {
+
+	}
+}
+
+.sidebar__nav ul {
+	font-family: $main-headings;
+	font-weight: 300;
+	font-size: modular-scale(0);
+	line-height: modular-scale(2);
+	margin: 0;
+	li {
+		a {
+			text-decoration: none;
+			color: $base-font-color;
+			&:hover {
+				font-weight: 600;
+			}
+		}
+	}
+}
+
+figure.colors__column-3 figcaption {
+	h3 {
+		font-family: $main-headings;
+		font-weight: 300;
+		font-size: modular-scale(1);
+		line-height: modular-scale(1);
+		color: $white;
+		margin: 0;
+	}
+}
+
+// LOGO SECTION ============================
+
+h3.logopackage__caption {
+	font-family: $main-headings;
+	font-weight: 300;
+	font-size: modular-scale(0, 1.25rem); //20px
+	line-height: modular-scale(0, 1.25rem); //20px
+	color: $white;
+}
+
+.logo__list,
+.logo__content ul {
+	font-family: $main-body-font;
+	font-weight: 300;
+	font-size: modular-scale(0); 
+	line-height: modular-scale(1); 
+}
+
+// TYPOGRAPHY SECTION ============================
+
+p.custom-heading {
+	padding: 0;
+	margin: 0;
+}
+
+.font-meta,
+.logo-samples__single p {
+	font-family: $main-headings;
+	text-transform: uppercase;
+	font-weight: 300;
+	font-size: modular-scale(0, 0.9rem);
+	color: $meta-color;
+	letter-spacing: 1px;
+	margin-top: 20px;
+}
+
+.logo-samples__single p {
+	line-height: modular-scale(0, 1rem);
+}
+
+.logo-descrip__text {
+	margin-bottom: 0;
+}
+
+// PHOTOGRAPHY SECTION ==================
+
+.photography__content {
+
+}
+
+
+// TONE SECTION ======================
+
+.tone__content {
+}
+
+// COLOURS ===========================
+.color-details,
+.scolor-details {
+	padding: 5px 10px;
+	p {
+		font-family: $main-headings;
+		text-transform: uppercase;
+		font-weight: 300;
+		font-size: modular-scale(0, 0.9rem);
+		color: grey;
+		margin: 0;
+		background-color: white;
+		padding: 3px;
+	}
+}
+
+.scolor-details {
+	padding: 10px 0;
+	p {
+		padding: 0;
+		font-size: modular-scale(0, 0.9rem);
+		line-height: modular-scale(1, 1rem);
+	}
+}
+
+// TEMPLATES ========================
+
+#templates ul.template-links {
+	li {
+		a {
+			text-decoration: none;
+			color: $black-m;
+		}
+	}
+}
+
