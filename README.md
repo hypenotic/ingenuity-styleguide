@@ -1,2 +1,0 @@
-# styleguide
-WP styleguide theme
