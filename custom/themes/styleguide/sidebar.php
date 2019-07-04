@@ -25,7 +25,7 @@
 		<div class="get-in-touch">
 			<p>Need help?</p>
 			<p>Situation not covered?</p>
-			<a href="mailto:s3c2e8i7q1z8n5i6@hypenotic.slack.com">
+			<a href="mailto:p9e1v8l2k3f8j6w5@hypenotic.slack.com">
 			<?php if ($picker): 
 			   echo '<button class="sidebar__button" style="background-color: ' . $picker . ';">'; 
 			endif ?>

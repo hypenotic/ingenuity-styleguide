@@ -1,3 +1,4 @@
+$ = jQuery;
 //GENERATE SIDEBAR MENU FROM MAIN H2 ELEMENT VALUES ================================
 
 // find all the elements with the class of menu-heading
