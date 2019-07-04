@@ -15,7 +15,7 @@
 	  })(document);
 	</script>
 
-	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 
 	<!-- CSS -->
 <!-- 	 <link rel='stylesheet' href='<?php // bloginfo('template_directory'); ?>/style.css' async='async' type='text/css' media='all' /> -->
